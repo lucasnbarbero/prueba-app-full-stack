@@ -18,10 +18,10 @@ app.get("/api", (req, res) => {
 
 app.get("/api/users", (req, res) => {
   res.json([
-    { id: 1, name: "John Doe" },
-    { id: 2, name: "Jane Doe" },
-    { id: 3, name: "Alice Smith" },
-    { id: 4, name: "Bob Johnson" },
+    { id: 1, name: "John Doe", email: 'john.doe@example.com' },
+    { id: 2, name: "Jane Doe", email: 'jane.doe@example.com' },
+    { id: 3, name: "Alice Smith", email: 'alice.smith@example.com' },
+    { id: 4, name: "Bob Johnson", email: 'bob.johnson@example.com' },
   ]);
 });
 
