@@ -1,5 +1,8 @@
 import express from "express";
 import cors from "cors";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -18,10 +21,10 @@ app.get("/api", (req, res) => {
 
 app.get("/api/users", (req, res) => {
   res.json([
-    { id: 1, name: "John Doe", email: 'john.doe@example.com' },
-    { id: 2, name: "Jane Doe", email: 'jane.doe@example.com' },
-    { id: 3, name: "Alice Smith", email: 'alice.smith@example.com' },
-    { id: 4, name: "Bob Johnson", email: 'bob.johnson@example.com' },
+    { id: 1, name: "John Doe", email: "john.doe@example.com" },
+    { id: 2, name: "Jane Doe", email: "jane.doe@example.com" },
+    { id: 3, name: "Alice Smith", email: "alice.smith@example.com" },
+    { id: 4, name: "Bob Johnson", email: "bob.johnson@example.com" },
   ]);
 });
 
